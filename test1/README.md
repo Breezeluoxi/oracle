@@ -5,9 +5,11 @@
   都是查询部门人数及其平均工资
 
   1. 查询语句一：
-     1. 直接使用 in 标签限制查询部门为（“IT”, "Sales"）
-     2. 通过部门名称分组
+     1. ![](https://raw.githubusercontent.com/Breezeluoxi/oracle/master/test1/%E6%9F%A5%E8%AF%A2%E4%B8%80%E7%BB%93%E6%9E%9C.png)
+     2. 直接使用 in 标签限制查询部门为（“IT”, "Sales"）
+     3. 通过部门名称分组
   2. 查询二
+  3. ![]()
      1. 直接按部门名称分组
      2. having 语句判断以实现部门筛选（“IT”, "Sales"）
 
