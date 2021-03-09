@@ -19,7 +19,7 @@
    4. 查询结果统计
    5. ![](https://raw.githubusercontent.com/Breezeluoxi/oracle/master/test1/查询二统计.png)
 
-### 2.首先运行和分析教材中的样例：本训练任务目的是查询两个部门('IT'和'Sales')的部门总人数和平均工资，以下两个查询的结果是一样的。但效率不相同。
+### 2.首先运行和分析教材中的样例：
 
 - 优化建议
 - ![](https://raw.githubusercontent.com/Breezeluoxi/oracle/master/test1/%E4%BC%98%E5%8C%96%E5%BB%BA%E8%AE%AE.png)
