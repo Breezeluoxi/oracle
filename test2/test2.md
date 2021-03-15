@@ -63,7 +63,7 @@
 
   - 登录system
 
-    ![image-20210315091036884](C:\Users\Breezeluoxi\AppData\Roaming\Typora\typora-user-images\image-20210315091036884.png)
+    ![image-20210315091036884](https://raw.githubusercontent.com/Breezeluoxi/oracle/master/test2/image-20210315091036884.png)
 
   - 查看空间使用情况
 
