@@ -62,6 +62,18 @@
 
     ![image-20210316105032118](https://raw.githubusercontent.com/Breezeluoxi/oracle/master/test2/image-20210316105032118.png)
 
+  - 查看同学之间表共享
+
+    ![image-20210316114614630](https://raw.githubusercontent.com/Breezeluoxi/oracle/master/test2/image-20210316115316228.png)
+
+  - 同学之间授权
+
+    ![image-20210316114816093](https://raw.githubusercontent.com/Breezeluoxi/oracle/master/test2/image-20210316114816093.png)
+
+  - 登录系统管理员察看更改
+
+    ![image-20210316115316228](https://raw.githubusercontent.com/Breezeluoxi/oracle/master/test2/image-20210316114614630.png)
+
 - ## 查看数据库的使用情况
 
   - 登录system
