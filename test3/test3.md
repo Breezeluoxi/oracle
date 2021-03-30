@@ -19,21 +19,21 @@
 
    - 登录
 
-   ![image-20210330112848741](./image-20210330112848741.png)
+   ![image-20210330112848741](https://raw.githubusercontent.com/Breezeluoxi/oracle/master/test3/image-20210330112848741.png)
 
    - 创建表空间
 
-     ![image-20210330114454622](\image-20210330114454622.png)
+     ![image-20210330114454622](https://raw.githubusercontent.com/Breezeluoxi/oracle/master/test3/image-20210330114454622.png)
 
-   ![image-20210330114851884](\image-20210330114851884.png)
+   ![image-20210330114851884](https://raw.githubusercontent.com/Breezeluoxi/oracle/master/test3/image-20210330114851884.png)
 
    - 为用户breezeluoxi授予使用表空间的权限
 
-     ![image-20210330131019489](\image-20210330131019489.png)
+     ![image-20210330131019489](https://raw.githubusercontent.com/Breezeluoxi/oracle/master/test3/image-20210330131019489.png)
 
    - 执行过程
 
-     ![image-20210330132016555](\image-20210330132016555.png)
+     ![image-20210330132016555](https://raw.githubusercontent.com/Breezeluoxi/oracle/master/test3/image-20210330132016555.png)
 
    - 创建orders表
 
@@ -154,7 +154,7 @@
      );
      ```
 
-     ![image-20210330132224837](\image-20210330132224837.png)
+     ![image-20210330132224837](https://raw.githubusercontent.com/Breezeluoxi/oracle/master/test3/image-20210330132224837.png)
 
    - 创建order_details表
 
@@ -177,7 +177,7 @@
      PARTITION BY REFERENCE (order_details_fk1);
      ```
 
-     ![image-20210330132405476](\image-20210330132405476.png)
+     ![image-20210330132405476](https://raw.githubusercontent.com/Breezeluoxi/oracle/master/test3/image-20210330132405476.png)
 
    - 插入数据
 
@@ -256,7 +256,7 @@
      /
      ```
 
-     ![image-20210330132730570]( \image-20210330132730570.png)
+     ![image-20210330132730570]( https://raw.githubusercontent.com/Breezeluoxi/oracle/master/test3/image-20210330132730570.png)
 
    - 查询
 
@@ -265,7 +265,7 @@
      select count(*) from order_details;
      ```
 
-     ![image-20210330132819503]( \image-20210330132819503.png)
+     ![image-20210330132819503]( https://raw.githubusercontent.com/Breezeluoxi/oracle/master/test3/image-20210330132819503.png)
 
    - 以Sys用户运行
 
@@ -276,7 +276,7 @@
      between to_date('2017-1-1','yyyy-mm-dd') and to_date('2018-6-1','yyyy-mm-dd');
      ```
 
-     ![image-20210330133029131]( \image-20210330133029131.png)
+     ![image-20210330133029131]( https://raw.githubusercontent.com/Breezeluoxi/oracle/master/test3/image-20210330133029131.png)
 
      ```sql
      select a.ORDER_ID,a.CUSTOMER_NAME,
@@ -286,7 +286,7 @@
      a.order_date between to_date('2017-1-1','yyyy-mm-dd') and to_date('2018-6-1','yyyy-mm-dd');
      ```
 
-     ![image-20210330133107715](\image-20210330133107715.png)
+     ![image-20210330133107715](https://raw.githubusercontent.com/Breezeluoxi/oracle/master/test3/image-20210330133107715.png)
 
    #### 3.2 查看数据库的使用情况（分区）
 
@@ -309,12 +309,12 @@
     where  a.tablespace_name = b.tablespace_name;
    ```
 
-   ![image-20210330133404458](\image-20210330133404458.png)
+   ![image-20210330133404458](https://raw.githubusercontent.com/Breezeluoxi/oracle/master/test3/image-20210330133404458.png)
 
    ### 3.3查看数据库的使用情况（不分区）
 
-   - ![image-20210330135301896]( \image-20210330135301896.png)
-   - ![image-20210330135332550]( \image-20210330135332550.png)
+   - ![image-20210330135301896]( https://raw.githubusercontent.com/Breezeluoxi/oracle/master/test3/image-20210330135301896.png)
+   - ![image-20210330135332550]( https://raw.githubusercontent.com/Breezeluoxi/oracle/master/test3/image-20210330135332550.png)
    - 
 
 4. ## 实验总结
