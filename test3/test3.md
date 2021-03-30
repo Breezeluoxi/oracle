@@ -296,7 +296,7 @@
    SELECT tablespace_name,FILE_NAME,BYTES/1024/1024 MB,MAXBYTES/1024/1024 MAX_MB,autoextensible FROM dba_data_files  WHERE  tablespace_name='USERS';
    ```
 
-   ![image-20210330133859549](\image-20210330133859549.png)
+   ![image-20210330133859549](https://raw.githubusercontent.com/Breezeluoxi/oracle/master/test3/image-20210330133859549.png)
 
    ```sql
    SELECT a.tablespace_name "表空间名",Total/1024/1024 "大小MB",
