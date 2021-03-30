@@ -19,21 +19,21 @@
 
    - 登录
 
-   ![image-20210330112848741]( \image-20210330112848741.png)
+   ![image-20210330112848741](./image-20210330112848741.png)
 
    - 创建表空间
 
-     ![image-20210330114454622]( \image-20210330114454622.png)
+     ![image-20210330114454622](\image-20210330114454622.png)
 
-   ![image-20210330114851884]( \image-20210330114851884.png)
+   ![image-20210330114851884](\image-20210330114851884.png)
 
    - 为用户breezeluoxi授予使用表空间的权限
 
-     ![image-20210330131019489]( \image-20210330131019489.png)
+     ![image-20210330131019489](\image-20210330131019489.png)
 
    - 执行过程
 
-     ![image-20210330132016555]( \image-20210330132016555.png)
+     ![image-20210330132016555](\image-20210330132016555.png)
 
    - 创建orders表
 
@@ -154,7 +154,7 @@
      );
      ```
 
-     ![image-20210330132224837]( \image-20210330132224837.png)
+     ![image-20210330132224837](\image-20210330132224837.png)
 
    - 创建order_details表
 
@@ -177,7 +177,7 @@
      PARTITION BY REFERENCE (order_details_fk1);
      ```
 
-     ![image-20210330132405476]( \image-20210330132405476.png)
+     ![image-20210330132405476](\image-20210330132405476.png)
 
    - 插入数据
 
@@ -286,7 +286,7 @@
      a.order_date between to_date('2017-1-1','yyyy-mm-dd') and to_date('2018-6-1','yyyy-mm-dd');
      ```
 
-     ![image-20210330133107715]( \image-20210330133107715.png)
+     ![image-20210330133107715](\image-20210330133107715.png)
 
    #### 3.2 查看数据库的使用情况（分区）
 
@@ -296,7 +296,7 @@
    SELECT tablespace_name,FILE_NAME,BYTES/1024/1024 MB,MAXBYTES/1024/1024 MAX_MB,autoextensible FROM dba_data_files  WHERE  tablespace_name='USERS';
    ```
 
-   ![image-20210330133859549]( \image-20210330133859549.png)
+   ![image-20210330133859549](\image-20210330133859549.png)
 
    ```sql
    SELECT a.tablespace_name "表空间名",Total/1024/1024 "大小MB",
