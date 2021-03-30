@@ -315,6 +315,7 @@
 
    - ![image-20210330135301896]( https://raw.githubusercontent.com/Breezeluoxi/oracle/master/test3/image-20210330135301896.png)
    - ![image-20210330135332550]( https://raw.githubusercontent.com/Breezeluoxi/oracle/master/test3/image-20210330135332550.png)
-   - 
 
 4. ## 实验总结
+
+   本次实验是完成分区表的创建，并测试数据插入，完成数据统计，要求掌握表空间创建方式，表外键链接，表的自动化分区策略，以及万级数据的插入。实验完成后我感觉收获很大，对oracle 数据库有了自己更深入的认识。希望能将自己所学的知识用于今后的学习工作中。
