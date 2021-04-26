@@ -14,15 +14,15 @@
 
 #### 1.登录用户
 
-![image-20210413105100269](test4.assets/image-20210413105100269.png)
+![image-20210413105100269](./image-20210413105100269.png)
 
 #### 2.执行sql脚本(完成建表和数据插入)
 
-![image-20210413112236337](test4.assets/image-20210413112236337.png)
+![image-20210413112236337](./image-20210413112236337.png)
 
-![](test4.assets/image-20210426090355493.png)
+![](./image-20210426090355493.png)
 
-![image-20210426090401307](test4.assets/image-20210426090401307.png)
+![image-20210426090401307](./image-20210426090401307.png)
 
 #### 3.查询数据
 
@@ -34,11 +34,11 @@ select * from ORDER_DETAILS where  order_id=1;
 select * from VIEW_ORDER_DETAILS where order_id=1;
 ```
 
-![image-20210413114025953](test4.assets/image-20210413114025953.png)
+![image-20210413114025953](./image-20210413114025953.png)
 
-![image-20210413114113696](test4.assets/image-20210413114113696.png)
+![image-20210413114113696](./image-20210413114113696.png)
 
-![image-20210413114054368](test4.assets/image-20210413114054368.png)
+![image-20210413114054368](./image-20210413114054368.png)
 
 2.递归查询某个员工及其所有下属，子下属员工。
 
@@ -52,13 +52,13 @@ WITH A (EMPLOYEE_ID,NAME,EMAIL,PHONE_NUMBER,HIRE_DATE,SALARY,MANAGER_ID,DEPARTME
 SELECT * FROM A;
 ```
 
-![image-20210413115135108](test4.assets/image-20210413115135108.png)
+![image-20210413115135108](./image-20210413115135108.png)
 
 ```.sql
 SELECT * FROM employees START WITH EMPLOYEE_ID = 11 CONNECT BY PRIOR  EMPLOYEE_ID = MANAGER_ID;
 ```
 
-![image-20210413115216820](test4.assets/image-20210413115216820.png)
+![image-20210413115216820](./image-20210413115216820.png)
 
 3.查询订单表，并且包括订单的订单应收货款: Trade_Receivable= sum(ORDER_DETAILS.ProductNum*ORDER_DETAILS.ProductPrice)- Discount。
 
@@ -66,7 +66,7 @@ SELECT * FROM employees START WITH EMPLOYEE_ID = 11 CONNECT BY PRIOR  EMPLOYEE_I
 select * from ORDERS;
 ```
 
-![image-20210426085445061](test4.assets/image-20210426085445061.png)
+![image-20210426085445061](./image-20210426085445061.png)
 
 4.查询订单详表，要求显示订单的客户名称和客户电话，产品类型用汉字描述。
 
@@ -77,7 +77,7 @@ where o.order_id=d.order_id
 and d.product_name=p.product_name
 ```
 
-![image-20210426085647028](test4.assets/image-20210426085647028.png)
+![image-20210426085647028](./image-20210426085647028.png)
 
 5.查询出所有空订单，即没有订单详单的订单。
 
@@ -90,7 +90,7 @@ from orders o,order_details d
 where o.order_id=d.order_id)
 ```
 
-![image-20210426085841218](test4.assets/image-20210426085841218.png)
+![image-20210426085841218](./image-20210426085841218.png)
 
 6.查询部门表，同时显示部门的负责人姓名。
 
@@ -101,7 +101,7 @@ where d.department_id=e.department_id
 and e.manager_id=d.department_id
 ```
 
-![image-20210426085931834](test4.assets/image-20210426085931834.png)
+![image-20210426085931834](./image-20210426085931834.png)
 
 7.查询部门表，统计每个部门的销售总金额。
 
@@ -116,7 +116,7 @@ and o.order_id=d.order_id),departments d
 group by d.department_name
 ```
 
-![image-20210426090008903](test4.assets/image-20210426090008903.png)
+![image-20210426090008903](./image-20210426090008903.png)
 
 
 
@@ -130,7 +130,7 @@ group by d.department_name
 
    
 
-   ![image-20210426092123471](test4.assets/image-20210426092123471.png)
+   ![image-20210426092123471](./image-20210426092123471.png)
 
    2.查看表空间的使用情况
 
@@ -154,7 +154,7 @@ WHERE a.tablespace_name = b.tablespace_name
 
 
 
-​	![image-20210426092250000](test4.assets/image-20210426092250000.png)
+​	![image-20210426092250000](./image-20210426092250000.png)
 
 ​	3.查看数据文件大小
 
@@ -164,7 +164,7 @@ ls -lh
 
 
 
-![image-20210426092636540](test4.assets/image-20210426092636540.png)
+![image-20210426092636540](./image-20210426092636540.png)
 
 #### 6.总结
 
